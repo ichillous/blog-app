@@ -7,7 +7,11 @@ const Blog = new Schema(
         author: {type: String, required: true},
         date: {type: String, required: true},
         body: {type: String, required: true},
-        imgURL: {type: String, required: false}
+        imgURL: {type: String, required: false},
+        
+    },
+    {
+        timestamps:  true
     }
 )
 
