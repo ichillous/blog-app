@@ -1,10 +1,15 @@
 import React from 'react';
+import './Home.css';
+import BlogCards from '../../components/BlogCards/BlogCards';
+import Layout from '../../components/shared/Layout/Layout'
 
 const Home = () => {
     return (
-        <div>
-            
-        </div>
+        <Layout>
+            <div className="home">
+              <BlogCards />  
+            </div> 
+        </Layout>
     );
 };
 
