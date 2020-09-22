@@ -2,7 +2,7 @@ const db = require('../db/connection')
 const Blog = require('../models/blog')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
-
+//hey
 const main = async () => {
     const blogs = 
     [
