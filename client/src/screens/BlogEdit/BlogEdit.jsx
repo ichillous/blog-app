@@ -44,7 +44,8 @@ export default function BlogEdit(props) {
   }
 
   return (
-    <Layout user={props.user}>
+    // <Layout user={props.user}>
+    <Layout>
       <div className="blog-edit">
         <div className="image-container">
           <img className="edit-blog-image" src={blog.imgURL} alt={blog.title} />
