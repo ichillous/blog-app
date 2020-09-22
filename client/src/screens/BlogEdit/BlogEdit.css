@@ -1,0 +1,102 @@
+.blog-edit {
+  display: flex;
+  padding: 100px;
+  padding-top: 80px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit-blog-image {
+  width: 300px;
+  height: auto;
+  padding: 0 40px;
+  padding-bottom: 5px;
+}
+
+.edit-input-image-url {
+  width: 85vw;
+  text-align: center;
+  font-size: 20px;
+}
+
+.edit-form {
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+.input-author,
+.input-title {
+  font-size: 35px;
+  letter-spacing: 1px;
+  padding: 5px;
+}
+
+.textarea-body,
+.input-date {
+  font-size: 14px;
+  padding: 10px;
+  letter-spacing: 0.9px;
+  line-height: 1.6;
+}
+
+.update-button {
+  font-size: 20px;
+  height: 50px;
+  width: 200px;
+  margin-top: 40px;
+  background-color: silver;
+  color: maroon;
+  border: 2px dotted gray;
+  box-shadow: 2px 2px 10px 2px #cecece;
+  cursor: crosshair;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .input-author,
+  .input-title {
+    font-size: 40px;
+  }
+  .textarea-body,
+  .input-date {
+    font-size: 16px;
+  }
+  .update-button {
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 900px) {
+  .input-author,
+  .input-title {
+    font-size: 45px;
+  }
+  .textarea-body,
+  .input-date {
+    font-size: 18px;
+  }
+  .update-button {
+    font-weight: bolder;
+  }
+  .edit-blog-image {
+    width: 420px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .input-author,
+  .input-title {
+    font-size: 50px;
+  }
+  .textarea-body,
+  .input-date {
+    font-size: 20px;
+  }
+  .edit-blog-image {
+    width: 500px;
+  }
+}
