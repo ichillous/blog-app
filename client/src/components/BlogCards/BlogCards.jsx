@@ -18,7 +18,7 @@ class blogCards extends Component {
 
   render() {
 
-    const CARDS = this.state.blogs.reverse().map((blog, index) => index < 8 ? <BlogCard _id={blog._id} title={blog.title} author={blog.author} body={blog.body} imgURL={blog.imgURL} key={index} /> : null)
+    const CARDS = this.state.blogs.reverse().map((blog, index) => index < 2 ? <BlogCard _id={blog._id} title={blog.title} author={blog.author} body={blog.body} imgURL={blog.imgURL} key={index} /> : null)
 
     retun (
     <div className="blog-cards">
