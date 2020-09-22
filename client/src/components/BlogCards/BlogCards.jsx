@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import "./BlogCards.css";
 import BlogCard from '../BlogCard/BlogCard';
 import { getBlogs } from '../../services/blogs';
 
-class blogCards extends Component {
+class BlogCards extends Component {
   constructor() {
     super()
     this.state = {
@@ -20,7 +20,7 @@ class blogCards extends Component {
 
     const CARDS = this.state.blogs.reverse().map((blog, index) => index < 2 ? <BlogCard _id={blog._id} title={blog.title} author={blog.author} body={blog.body} imgURL={blog.imgURL} key={index} /> : null)
 
-    retun (
+    return (
     <div className="blog-cards">
 
       <div className="latest">Latest</div>

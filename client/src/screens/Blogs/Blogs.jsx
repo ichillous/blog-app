@@ -48,7 +48,7 @@ const Blogs = (props) => {
     setQueriedBlogs(newQueriedBlogs, () => handleSort(sortType))
   }
 
-  const handleSubmit = events => event.preventDefault()
+  const handleSubmit = event => event.preventDefault()
 
   const blogsJSX = queriedBlogs.map((blog, index) => 
     <Blog _id={blog._id} title={blog.title} imgURL={blog.imgURL} author={blog.author} key={index} body={blog.body} />   
@@ -57,6 +57,7 @@ const Blogs = (props) => {
 
   return (
     <Layout onSubmit={handleSubmit} onChange={handleSearch}>
+      <Search onSubmit={handleSubmit} onChange={handleSearch} />
       <Sort onSubmit={handleSubmit} onChange={handleSort} />
       <div className="blogs">
         {blogsJSX}

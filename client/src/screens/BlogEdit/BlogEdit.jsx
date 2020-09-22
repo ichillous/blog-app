@@ -36,7 +36,7 @@ export default function BlogEdit(props) {
     e.preventDefault();
     let { id } = props.match.params;
     const update = await updateBlog(id, blog);
-    setBlog(update);
+    setUpdated(update);
   };
 
   if (updated) {

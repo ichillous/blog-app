@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './BlogDetail.css'
 import Layout from '../../components/shared/Layout/Layout'
-import { getProduct, deleteProduct } from '../../services/blogs'
+import { getBlog, deleteBlog } from '../../services/blogs'
 import { useParams, Link } from 'react-router-dom'
 
 const BlogDetail = (props) => {

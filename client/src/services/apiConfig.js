@@ -10,11 +10,11 @@ const apiUrls = {
 if (window.location.hostname === 'localhost') {
     apiURL = apiUrls.development
 } else {
-    apiUrl = apiUrls.production
+    apiURL= apiUrls.production
 }
 
 const api = axios.create({
-    baseURL: apiUrl
+    baseURL: apiURL
 })
 
 export default api
