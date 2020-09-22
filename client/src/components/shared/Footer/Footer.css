@@ -1,0 +1,10 @@
+.footer {
+  /* Appearance Properties */
+  min-width: 100vw;
+  background-color: solid white;
+  box-shadow: 1px 1px 1px darkgray;
+  
+
+  display: flex;
+
+}
