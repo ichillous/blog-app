@@ -35,7 +35,7 @@ export default function BlogEdit(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     let { id } = props.match.params;
-    const update = await updateBlog(id, product);
+    const update = await updateBlog(id, blog);
     setBlog(update);
   };
 
@@ -53,7 +53,7 @@ export default function BlogEdit(props) {
             <input
               className="edit-input-image-url"
               placeholder="Image Link"
-              value={product.imgURL}
+              value={blog.imgURL}
               name="imgURL"
               onChange={handleChange}
             />
