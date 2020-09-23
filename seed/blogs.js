@@ -11,7 +11,7 @@ const main = async () => {
             "author": "Rona Virus",
             "date": "09-21-2020",
             "body":  "Negative, sir",
-            "imgURL":  " "  
+            "imgURL":  "https://imgur.com/a/FObINhF"  
         },
         {
             "title": "Happy Monday!",

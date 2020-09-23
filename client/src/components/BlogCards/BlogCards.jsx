@@ -13,7 +13,9 @@ class BlogCards extends Component {
 
   async componentDidMount() {
     const blogs = await getBlogs()
+    console.log(blogs)
     this.setState({ blogs })
+    console.log(blogs)
   }
 
   render() {
