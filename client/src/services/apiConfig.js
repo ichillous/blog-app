@@ -2,19 +2,20 @@ import axios from 'axios'
 
 let apiURL
 
-const apiUrls = {
+const apiURLs = {
     production: 'https://dragonflies-blog-app.herokuapp.com/api',
-    development: 'http://localhose:3000/api'
+    development: 'http://localhost:3000/api'
 }
+//backend runs on 3000 always
 
 if (window.location.hostname === 'localhost') {
-    apiURL = apiUrls.development
+    apiURL = apiURLs.development
 } else {
-    apiURL= apiUrls.production
+    apiURL= apiURLs.production
 }
 
-const api = axios.create({
+const API = axios.create({
     baseURL: apiURL
 })
 
-export default api
+export default API
