@@ -1,5 +1,5 @@
 .blog-cards {
-  width: 90vw;
+  max-width: 90vw;
   padding: 50px;
   margin: 50px;
 }

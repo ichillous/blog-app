@@ -19,10 +19,18 @@ nav {
 }
 
 .links {
-    flex: 2;
-    max-width: 30vw;
-    align-items: center;
-    font-size: 24px;
+  /* // Appearance of Header Container */
+  width: "100vw",
+  height: "92px",
+  backgroundColor: "white",
+  border: "2px solid lightgray",
+  borderTop: "0px",
+  borderLeft: "0px",
+
+  /* //Appearance of Fonts within Container */
+
+  textDecorationLine: 'none',
+  letterSpacing: "-3px",
     display: flex;
 }
 

@@ -1,5 +1,6 @@
 .blog-detail {
   display: flex;
+  flex-direction: column;
   padding: 100px;
   padding-top: 80px;
 }

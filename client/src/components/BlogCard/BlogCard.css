@@ -16,7 +16,7 @@
 }
 
 .blog-card-image {
-  height: 200px;
+  max-height: 200px;
   width: auto;
 }
 
@@ -25,10 +25,10 @@
   font-style: italic;
   text-shadow: 2px 2px maroon;
 }
-/* .blog-card a {
+.blog-card a {
   text-decoration: underline;
   letter-spacing: 0.7px;
-} */
+}
 
 @media (min-width: 600px) {
   .blog-card-image {

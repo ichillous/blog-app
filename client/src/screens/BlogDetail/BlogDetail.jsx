@@ -26,7 +26,7 @@ const BlogDetail = (props) => {
   return (
     <Layout>
       <div className="blog-detail">
-        <img className="blog-detail-image" src={blog.imgURL} alt={blog.name} />
+        <img className="blog-detail-image" src={blog.imgURL} alt={blog.name} onError={(e) => { e.target.onerror = null; e.target.src = "https://pbs.twimg.com/profile_images/1082424539492073477/exU8rYn8_400x400.jpg" }} />
         <div className="author">{blog.author}</div>
         <div className="body">{blog.body}</div>
         <div className="button-container">

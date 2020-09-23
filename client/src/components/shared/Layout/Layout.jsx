@@ -5,7 +5,12 @@ import "./Layout.css";
 
 export default function Layout(props) {
   return (
-    <div className="display">
+    <div className="display" style={{
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+
+    }}>
       <Nav />
       <br />
       <main className="display-info">{props.children}</main>
