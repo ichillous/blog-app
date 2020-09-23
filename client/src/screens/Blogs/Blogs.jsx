@@ -58,7 +58,7 @@ const Blogs = (props) => {
   return (
     <Layout onSubmit={handleSubmit} onChange={handleSearch}>
       <Search onSubmit={handleSubmit} onChange={handleSearch} />
-      <Sort onSubmit={handleSubmit} onChange={handleSort} />
+      {/* <Sort onSubmit={handleSubmit} onChange={handleSort} /> */}
       <div className="blogs">
         {blogsJSX}
       </div>
