@@ -1,0 +1,15 @@
+.footer {
+  /* Appearance Properties */
+  min-width: 100vw;
+  height: 100px;
+  background-color: solid white;
+  box-shadow: 1px 1px 1px darkgray;
+
+  /* Position Properties */
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  
+  /* Contents Properties */
+  display: flex;
+}

@@ -1,0 +1,33 @@
+.display {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.display-info {
+  flex: 2;
+  padding: 1vw;
+  width: 80vw;
+}
+
+@media (min-width: 600px) {
+  .display {
+    height: 100%;
+  }
+  .display-info {
+    padding: 2vw;
+  }
+}
+
+@media (min-width: 900px) {
+  .display-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1500px) {
+  .display-info {
+    padding: 3vw;
+  }
+}
